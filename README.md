@@ -22,8 +22,10 @@ var options = {
 var locals = {
   title: 'Hello World!'
 };
-consolidate.render('<h1>{{title}}</h1>', options, locals).body
-//=> '<h1>Hello World!</h1>'
+consolidate.renderAsync('<h1>{{title}}</h1>', options, locals, function (err, result) {
+  result.body
+  //=> '<h1>Hello World!</h1>'
+});
 ```
 
 ## License
