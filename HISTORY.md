@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.0.2: 2015-09-10
+## v0.0.3: 2015-09-10
 
 - Switched to `extend-shallow` for options merging
 
