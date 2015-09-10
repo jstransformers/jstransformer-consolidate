@@ -1,7 +1,7 @@
 'use strict';
 
 var consolidate = require('consolidate');
-var extend = require('extend');
+var extend = require('extend-shallow');
 
 exports.name = 'consolidate';
 exports.outputFormat = 'html';

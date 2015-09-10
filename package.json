@@ -9,7 +9,7 @@
     "index.js"
   ],
   "devDependencies": {
-    "handlebars": "^3.0.3",
+    "handlebars": "^4.0.2",
     "test-jstransformer": "^1.0.0"
   },
   "scripts": {
@@ -27,6 +27,6 @@
   "license": "MIT",
   "dependencies": {
     "consolidate": "^0.13.1",
-    "extend": "^3.0.0"
+    "extend-shallow": "^2.0.1"
   }
 }
