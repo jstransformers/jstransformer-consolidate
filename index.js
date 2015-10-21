@@ -4,6 +4,7 @@ var consolidate = require('consolidate');
 var extend = require('extend-shallow');
 
 exports.name = 'consolidate';
+exports.inputFormats = Object.keys(consolidate);
 exports.outputFormat = 'html';
 
 /**
