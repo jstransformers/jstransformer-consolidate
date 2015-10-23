@@ -4,8 +4,15 @@ var consolidate = require('consolidate');
 var extend = require('extend-shallow');
 
 exports.name = 'consolidate';
-exports.inputFormats = Object.keys(consolidate);
 exports.outputFormat = 'html';
+
+// Add all the inputFormats.
+exports.inputFormats = [];
+Object.keys(consolidate).forEach(function (item) {
+  if (['clearCache', 'requireReact', 'requires'].indexOf(item) <= -1) {
+    exports.inputFormats.push(item);
+  }
+});
 
 /**
  * Returns the name of the engine from the given options.

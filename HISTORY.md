@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.1: 2015-10-22
+
+- Removed the unneeded inputFormats
+
 ## v0.1.0: 2015-10-20
 
 - Added `.inputFormats` support

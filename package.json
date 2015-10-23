@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-consolidate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Consolidate support for JSTransformers.",
   "keywords": [
     "jstransformer"
