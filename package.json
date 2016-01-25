@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-consolidate",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Consolidate support for JSTransformers.",
   "keywords": [
     "jstransformer"
@@ -26,7 +26,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "consolidate": "^0.13.1",
+    "consolidate": "^0.14.0",
     "extend-shallow": "^2.0.1"
   }
 }

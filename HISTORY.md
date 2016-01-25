@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.0: 2015-10-22
+
+- Update to `consolidate@^0.14.0`
+
 ## v0.1.1: 2015-10-22
 
 - Removed the unneeded inputFormats
