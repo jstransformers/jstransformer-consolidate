@@ -1,6 +1,10 @@
 {
+  "dependencies": {
+    "consolidate": "^0.14.5",
+    "extend-shallow": "^2.0.1"
+  },
   "name": "jstransformer-consolidate",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Consolidate support for JSTransformers.",
   "keywords": [
     "jstransformer"
@@ -9,7 +13,7 @@
     "index.js"
   ],
   "devDependencies": {
-    "handlebars": "^4.0.2",
+    "handlebars": "^4.0.6",
     "test-jstransformer": "^1.0.0"
   },
   "scripts": {
@@ -26,10 +30,6 @@
   "author": {
     "name": "JSTransformers Team",
     "url": "http://github.com/orgs/jstransformers/people"
-  },
-  "dependencies": {
-    "consolidate": "^0.14.1",
-    "extend-shallow": "^2.0.1"
   },
   "license": "MIT"
 }

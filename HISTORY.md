@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.2: 2016-12-08
+
+- Update to `consolidate@^0.14.5`
+- Update Boilerplate
+
 ## v0.2.1: 2016-06-06
 
 - Update to `consolidate@^0.14.1`
