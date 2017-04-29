@@ -1,5 +1,7 @@
 # jstransformer-consolidate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-consolidate.svg)](https://greenkeeper.io/)
+
 [Consolidate.js](https://github.com/tj/consolidate.js) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-consolidate/master.svg)](https://travis-ci.org/jstransformers/jstransformer-consolidate)
