@@ -20,7 +20,8 @@ Object.keys(consolidate).forEach(item => {
 function getEngineName(options) {
   if (typeof options === 'string' || options instanceof String) {
     return options
-  } else if (typeof options === 'object' && options.engine) {
+  }
+  if (typeof options === 'object' && options.engine) {
     return options.engine
   }
   throw new Error('options.engine not found.')
