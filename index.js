@@ -1,14 +1,14 @@
 'use strict'
 
-var consolidate = require('consolidate')
-var extend = require('extend-shallow')
+const consolidate = require('consolidate')
+const extend = require('extend-shallow')
 
 exports.name = 'consolidate'
 exports.outputFormat = 'html'
 
 // Add all the inputFormats.
 exports.inputFormats = []
-Object.keys(consolidate).forEach(function (item) {
+Object.keys(consolidate).forEach(item => {
   if (['clearCache', 'requireReact', 'requires'].indexOf(item) <= -1) {
     exports.inputFormats.push(item)
   }
@@ -20,18 +20,19 @@ Object.keys(consolidate).forEach(function (item) {
 function getEngineName(options) {
   if (typeof options === 'string' || options instanceof String) {
     return options
-  } else if (typeof options === 'object' && options.engine) {
+  }
+  if (typeof options === 'object' && options.engine) {
     return options.engine
   }
   throw new Error('options.engine not found.')
 }
 
 exports.renderAsync = function (str, options, locals) {
-  var name = getEngineName(options)
+  const name = getEngineName(options)
   return consolidate[name].render(str, extend({}, options, locals))
 }
 
 exports.renderFileAsync = function (file, options, locals) {
-  var name = getEngineName(options)
+  const name = getEngineName(options)
   return consolidate[name](file, extend({}, options, locals))
 }

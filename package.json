@@ -1,10 +1,10 @@
 {
   "dependencies": {
-    "consolidate": "^0.14.5",
-    "extend-shallow": "^2.0.1"
+    "consolidate": "^0.15.0",
+    "extend-shallow": "^3.0.2"
   },
   "name": "jstransformer-consolidate",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Consolidate support for JSTransformers.",
   "keywords": [
     "jstransformer"
@@ -13,14 +13,14 @@
     "index.js"
   ],
   "devDependencies": {
-    "handlebars": "^4.0.6",
+    "handlebars": "^4.0.11",
     "test-jstransformer": "^1.0.0",
     "xo": "*"
   },
   "scripts": {
     "coverage": "test-jstransformer coverage",
     "test": "test-jstransformer",
-    "posttest": "xo --space --no-semicolon index.js"
+    "posttest": "xo --space=2 --no-semicolon index.js"
   },
   "engines": {
     "node": ">=4"
