@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "consolidate": "^0.15.0",
+    "consolidate": "^0.15.1",
     "extend-shallow": "^3.0.2"
   },
   "name": "jstransformer-consolidate",
