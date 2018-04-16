@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.4.0: 2018-04-16
+
+- Added ability to use `options.filename` to discover which engine to use
+
 ## v0.3.0: 2018-01-06
 
 - Update Boilerplate
