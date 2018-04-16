@@ -1,5 +1,6 @@
 'use strict'
 
+const path = require('path')
 const consolidate = require('consolidate')
 const extend = require('extend-shallow')
 
@@ -23,6 +24,12 @@ function getEngineName(options) {
   }
   if (typeof options === 'object' && options.engine) {
     return options.engine
+  }
+  if (typeof options === 'object' && options.filename) {
+    const ext = path.extname(options.filename)
+    if (ext.substring(0, 1) === '.') {
+      return ext.substring(1)
+    }
   }
   throw new Error('options.engine not found.')
 }
