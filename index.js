@@ -22,15 +22,18 @@ function getEngineName(options) {
   if (typeof options === 'string' || options instanceof String) {
     return options
   }
+
   if (typeof options === 'object' && options.engine) {
     return options.engine
   }
+
   if (typeof options === 'object' && options.filename) {
     const ext = path.extname(options.filename)
     if (ext.substring(0, 1) === '.') {
       return ext.substring(1)
     }
   }
+
   throw new Error('options.engine not found.')
 }
 
@@ -42,6 +45,7 @@ function getEngine(options) {
   if (consolidate[name]) {
     return consolidate[name]
   }
+
   throw new Error('options.engine is not a supported engine')
 }
 
