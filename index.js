@@ -29,8 +29,8 @@ function getEngineName(options) {
 
   if (typeof options === 'object' && options.filename) {
     const ext = path.extname(options.filename)
-    if (ext.substring(0, 1) === '.') {
-      return ext.substring(1)
+    if (ext.slice(0, 1) === '.') {
+      return ext.slice(1)
     }
   }
 
