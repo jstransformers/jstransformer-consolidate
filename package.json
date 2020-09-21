@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "consolidate": "^0.15.1",
+    "consolidate": "^0.16.0",
     "extend-shallow": "^3.0.2"
   },
   "name": "jstransformer-consolidate",
@@ -13,8 +13,8 @@
     "index.js"
   ],
   "devDependencies": {
-    "handlebars": "^4.0.11",
-    "test-jstransformer": "^1.0.0",
+    "handlebars": "^4.7.6",
+    "test-jstransformer": "*",
     "xo": "*"
   },
   "scripts": {

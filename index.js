@@ -49,8 +49,8 @@ function getEngine(options) {
   throw new Error('options.engine is not a supported engine')
 }
 
-exports.renderAsync = function (str, options, locals) {
-  return getEngine(options).render(str, extend({}, options, locals))
+exports.renderAsync = function (input, options, locals) {
+  return getEngine(options).render(input, extend({}, options, locals))
 }
 
 exports.renderFileAsync = function (file, options, locals) {
